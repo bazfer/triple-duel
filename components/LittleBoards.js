@@ -25,6 +25,7 @@ class LittleBoards extends React.Component {
     }
 
 		dynamicClasses(color, border, align) {
+			
 			if (align) {
 				align = 'middle';
 			} else {

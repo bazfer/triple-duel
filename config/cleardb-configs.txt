@@ -1,0 +1,21 @@
+// triple-duel-backup
+
+mysql://bb12281befcbd6:d43b7f1c@us-cdbr-iron-east-03.cleardb.net/heroku_f335e6b093ed8ba?reconnect=true
+
+"production": {
+        "username": "bb12281befcbd6",
+        "password": "d43b7f1c",
+        "database": "heroku_f335e6b093ed8ba",
+        "host": "us-cdbr-iron-east-03.cleardb.net",
+        "dialect": "mysql"
+    }
+
+// triple-duel (LIVE!)
+
+"production": {
+        "username": "b3e1278355f5ab",
+        "password": "4ccb7825",
+        "database": "heroku_1e4f56b859daa7c",
+        "host": "us-cdbr-iron-east-03.cleardb.net",
+        "dialect": "mysql"
+    }

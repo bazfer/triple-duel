@@ -1,7 +1,12 @@
 // Include React
 var React = require("react");
 
-var socket = io.connect('http://localhost:8080');
+// production
+// const socket = io.connect('http://triple-duel.herokuapp.com');
+// backup
+const socket = io.connect('http://triple-duel-backup.herokuapp.com/');
+// local
+//var socket = io.connect('http://localhost:8080');
 
 class Hand extends React.Component {
     constructor(props) {
