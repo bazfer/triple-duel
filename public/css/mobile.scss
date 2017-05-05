@@ -1,0 +1,93 @@
+@media only screen and (max-width: 414px) {
+    .nav-wrap {
+        height: 9vh;
+        .nav-logo {
+            max-width: 86px;
+            line-height: 120%;
+            margin-left: 9px;
+        }
+    }
+    .main {
+        height: 91vh;
+    }
+    .rooms-bar::-webkit-scrollbar {
+        height: 0!important;
+    }
+    .rooms-bar {
+        order: 2;
+        width: 100%;
+        height: 12vh;
+        padding-top: 0px;
+        overflow-x: scroll;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 6px;
+        .dynamic-rooms {
+            display: flex;
+            flex-direction: row;
+        }
+        .room-button {
+            margin-right: 12px;
+            button {
+                width: 44px;
+                height: 44px;
+                font-size: 24px;
+                margin-right: 0px;
+                i {
+                    font-size: 36px;
+                }
+            }
+            .room-status {
+                display: none;
+            }
+        }
+    }
+    .game {
+        order: 1;
+        flex-grow: 5;
+        width: auto;
+        height: auto;
+        margin: 3px 6px 0px 6px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .hand {
+            height: auto;
+            width: 100%;
+            margin-top: 3px;
+            margin-bottom: 6px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #hand2 {
+            display: none;
+        }
+        .card {
+            width: 66px;
+            height: 99px;
+            box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.40);
+            img {
+                width: 66px;
+                height: 99px;
+                border: 3px solid $orange;
+            }
+        }
+        .card:not(:first-child) {
+            margin-left: -6px;
+        }
+        .board {
+            order: 2;
+            width: 235px;
+            height: 343px;
+            .cell {
+                width: 72px;
+                height: 108px;
+            }
+        }
+    }
+    .chat-box {
+        display: none;
+    }
+}

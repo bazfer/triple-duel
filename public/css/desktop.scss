@@ -1,0 +1,89 @@
+$card-width: 114px;
+$card-height: 171px;
+@media only screen and (min-width: 769px) {
+    .nav-wrap {
+        height: 9vh;
+        .nav-logo {
+            a {
+                font-size: 24px;
+                line-height: 80%;
+            }
+        }
+        .nav-versus {
+            div:nth-child(2) {
+                p {
+                    font-size: 60px;
+                }
+            }
+        }
+        .nav-links {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+    .main {
+        height: auto;
+    }
+    .rooms-bar::-webkit-scrollbar {
+        width: 0!important;
+    }
+    .rooms-bar {
+        overflow-y: scroll;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .game {
+        flex-direction: row;
+        justify-content: center;
+        .hand {
+            flex-direction: column;
+            width: 126px;
+            margin-right: 9px;
+        }
+        .card {
+            box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.50);
+        }
+        .card:not(:first-child) {
+            margin-left: 0px;
+            margin-top: -74px;
+        }
+    }
+    .chat-box {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 806px) {
+    .board {
+        margin-right: 9px;
+        width: ($card-width*3) + 36px !important;
+        height: ($card-height*3) + 45px !important;
+        .cell {
+            width: $card-width + 6px !important;
+            height: $card-height + 9px !important;
+        }
+    }
+    .chat-box {
+        min-width: 270px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        margin-right: 9px;
+        margin-top: 3px;
+        height: ($card-height*3) + 45px;
+        .chat-input {
+            height: 30px;
+        }
+    }
+}
+
+// @media only screen and (min-width: 960px) {
+//     #hand2 {
+//         order: 3;
+//         display: flex !important;
+//     }
+//     .chat {
+//         order: 4;
+//     }
+// }
