@@ -27,7 +27,7 @@ class Signup extends React.Component {
             			<button type="submit" className="waves-effect waves-light orange btn login-button">Signup</button>
           		</form>
           		<hr />
-          		<p className="text-yellow">Already have an account? <a href="/login">Login</a></p>
+          		{/*<p className="text-yellow">Already have an account? <a href="/login">Login</a></p>*/}
 
         	</div>
       </div>

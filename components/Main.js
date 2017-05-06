@@ -11,9 +11,9 @@ var LittleBoards = require("./LittleBoards");
 // production
 // const socket = io.connect('http://triple-duel.herokuapp.com');
 // backup
-const socket = io.connect('https://triple-duel-backup.herokuapp.com/');
+// const socket = io.connect('https://triple-duel-backup.herokuapp.com/');
 // local
-//var socket = io.connect('http://localhost:8080');
+ var socket = io.connect('http://localhost:8080');
 
 var Main = React.createClass({
     //class Main extends React.Component {
@@ -187,6 +187,10 @@ var Main = React.createClass({
                                 <div className='powers'>{_this.state.hand[i].right}</div>
                                 <div className='powers'>{_this.state.hand[i].down}</div>
                                 <div className='powers'>{_this.state.hand[i].left}</div>
+                                {/*<div className="powers">
+                                    {_this.state.hand[i].up}<br/>{_this.state.hand[i].left}
+                                    + {_this.state.hand[i].right}<br/>{_this.state.hand[i].down}
+                                </div>*/}
                                 {/*BIG WTF*/}
                                 {/*<div className="powers">
                                     <div className="powers-top">{_this.state.hand[i].up}</div>
@@ -223,11 +227,14 @@ var Main = React.createClass({
                             board_html[j][1] = (
                                 <div className={_class} data-card={i}>
                                     <img className="card-image" src={_this.state.board_game[i].image_url}/>
-                                    {/*changes right here*/}
-                                    <div className='powers'>{_this.state.hand[i].up}</div>
-                                <div className='powers'>{_this.state.hand[i].right}</div>
-                                <div className='powers'>{_this.state.hand[i].down}</div>
-                                <div className='powers'>{_this.state.hand[i].left}</div>
+                                    <div className='powers'>{_this.state.board_game[i].up}</div>
+                                    <div className='powers'>{_this.state.board_game[i].right}</div>
+                                    <div className='powers'>{_this.state.board_game[i].down}</div>
+                                    <div className='powers'>{_this.state.board_game[i].left}</div>
+                                    {/*<div className="powers">
+                                        {_this.state.hand[i].up}{_this.state.hand[i].left}
+                                        {_this.state.hand[i].right}{_this.state.hand[i].down}
+                                    </div>*/}
                                     {/*BIG WTF*/}
                                     {/*<div className="powers">
                                         <div className="powers-top">{_this.state.hand[i].up}</div>

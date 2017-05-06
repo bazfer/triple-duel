@@ -23,8 +23,8 @@ class Navbar extends React.Component {
 					<div className="text-yellow mob-text-16"><p>{this.props.player2}</p></div>
 				</div>
 				<div className="nav-links grow 1">			
-          <div onClick={this.handleClick.bind(this)}>Little Boards</div>
-					<a href="#" className="text-blue">Logout</a>
+          <div className="text-yellow mob-text-16" onClick={this.handleClick.bind(this)}>Leaderboards</div>
+					<a href="#" className="text-blue mob-text-16">Logout</a>
 				</div>
 			</div>
     );

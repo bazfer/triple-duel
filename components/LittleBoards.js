@@ -57,7 +57,7 @@ class LittleBoards extends React.Component {
 						<td className={this.dynamicClasses(color, border)}>{record.User.name}</td>
 						<td className={this.dynamicClasses(color, border, align)}>{record.wins}</td>
 						<td className={this.dynamicClasses(color, border, align)}>{record.losses}</td>
-						{/*<td>{record.disconnects}</td>*/}
+						<td className={this.dynamicClasses(color, border, align)}>{record.disconnects}</td>
 					</tr>
 				)
 				
@@ -74,7 +74,7 @@ class LittleBoards extends React.Component {
 								<th className='littleboard-header'>User Name</th>
 								<th className='littleboard-header'>Wins</th>
 								<th className='littleboard-header'>Losses</th>
-								{/*<th>disconnects</th>*/}
+								<th className='littleboard-header'>Disconnects</th>
 							</tr>
 							{this.renderRecords()}
 						</tbody>

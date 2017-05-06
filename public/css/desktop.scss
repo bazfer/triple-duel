@@ -4,6 +4,7 @@ $card-height: 171px;
     .nav-wrap {
         height: 9vh;
         .nav-logo {
+            margin-left: 12px;
             a {
                 font-size: 24px;
                 line-height: 80%;
@@ -18,7 +19,7 @@ $card-height: 171px;
         }
         .nav-links {
             a {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }

@@ -54,26 +54,26 @@ var Login = React.createClass({
   render() {
     return (
       <div className="container">
-          <div className="col-sm-6 col-sm-offset-3">
-              <h1 className="text-center">Triple Monster</h1>
+          <div className="signup-title">
+              <h1 className="sl-form text-orange text-120 outline-yellow">Triple Duel</h1>
               <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
-                      <label className="text-yellow">Username</label>
-                      <input type="text" className="form-control" id="username" name="username" onChange={this.handleChangeUsername} />
+                      <label className="sl-label text-yellow text-20">Username</label>
+                      <input type="text" className="sl-input form-control" id="username" name="username" onChange={this.handleChangeUsername} />
                   </div>
                   <div className="form-group">
-                      <label className="text-yellow">Password</label>
-                      <input type="password" className="form-control" id="password" name="password" onChange={this.handleChangePassword} />
+                      <label className="sl-label text-yellow text-20">Password</label>
+                      <input type="password" className="sl-input form-control" id="password" name="password" onChange={this.handleChangePassword} />
                   </div>
                   <div className="form-group">
-                      <label className="text-yellow"></label>
-                      <input type="checkbox" className="form-control" name="remember" value="yes" />
+                      <label className="sl-label text-yellow text-20"></label>
+                      <input type="checkbox" className="sl-input form-control" name="remember" value="yes" />
                   </div>
 
                   <button type="submit" className="waves-effect waves-light orange btn login-button">Login</button>
               </form>
               <hr />
-              <p className="text-yellow">Need an account? <a href="/signup">Signup</a></p>
+              {/*<p className="text-yellow">Need an account? <a href="/signup">Signup</a></p>*/}
           </div>
       </div>
     );
