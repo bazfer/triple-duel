@@ -478,10 +478,10 @@ body {
   display: flex; }
   .game .hand {
     /*padding: 3px;
-    border-radius: 6px;
-    border: 2px solid $brown;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-    background-color: $sh-brown;*/
+        border-radius: 6px;
+        border: 2px solid $brown;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+        background-color: $sh-brown;*/
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -584,55 +584,40 @@ body {
   background-color: #039BE5 !important; }
 
 .littleboard {
-  margin-top: 12px; }
-
-.littleboard-table {
-  border: none; }
-
-.littleboard {
   order: 2;
-  background-color: #918674;
-  border: 3px solid #371800;
-  border: #918674 1px solid;
-  border-radius: 6px;
-  margin: 30px 30px 0px 30px;
-  padding: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  border-bottom: none;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  margin: 22px;
   min-height: 85vh; }
-  .littleboard .littleboard-header {
-    color: #EBA828;
-    font-family: Kefa-Regular;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    background: #371800;
-    border: 2px solid #592E0D;
-    border-bottom: 3px solid #592E0D;
-    margin: -4px -4px 0px -4px !important;
-    padding: 12px;
-    font-family: Kefa-Regular;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 90%;
-    font-size: 16px;
-    text-align: center;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px; }
-  .littleboard .littleboard-user {
-    margin: 0;
-    padding: 6px;
-    text-align: center;
-    border-bottom: #592E0D solid 1px;
-    margin: 0 -4px 0px -4px !important;
-    padding: 12px;
-    font-family: Kefa-Regular;
-    line-height: 90%;
-    font-size: 32px;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important; }
-    .littleboard .littleboard-user .middle {
-      text-align: center; }
+  .littleboard .littleboard-table {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: #918674; }
+    .littleboard .littleboard-table .littleboard-header {
+      color: #EBA828;
+      font-family: Kefa-Regular;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 24px;
+      border-bottom: 2px solid #592E0D; }
+      .littleboard .littleboard-table .littleboard-header th {
+        background: #371800;
+        border-radius: 0;
+        padding: 12px;
+        text-align: center; }
+      .littleboard .littleboard-table .littleboard-header th:first-child {
+        border-top-left-radius: 10px; }
+      .littleboard .littleboard-table .littleboard-header th:nth-child(0n+2) {
+        text-align: left; }
+      .littleboard .littleboard-table .littleboard-header th:last-child {
+        border-top-right-radius: 10px; }
+    .littleboard .littleboard-table .littleboard-user {
+      border-top: #8c806e solid 1px;
+      font-size: 24px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+      line-height: 90%; }
+      .littleboard .littleboard-table .littleboard-user td {
+        padding: 12px;
+        text-align: center; }
+      .littleboard .littleboard-table .littleboard-user td:nth-child(0n+2) {
+        text-align: left; }
 
 @media only screen and (max-width: 414px) {
   .nav-wrap {
@@ -641,13 +626,10 @@ body {
       max-width: 86px;
       line-height: 120%;
       margin-left: 9px; }
-
   .main {
     height: 91vh; }
-
   .rooms-bar::-webkit-scrollbar {
     height: 0 !important; }
-
   .rooms-bar {
     order: 2;
     width: 100%;
@@ -671,7 +653,6 @@ body {
           font-size: 36px; }
       .rooms-bar .room-button .room-status {
         display: none; }
-
   .game {
     order: 1;
     flex-grow: 5;
@@ -709,9 +690,9 @@ body {
       .game .board .cell {
         width: 72px;
         height: 108px; }
-
   .chat-box {
     display: none; } }
+
 @media only screen and (min-width: 415px) {
   .nav-wrap {
     height: 8vh; }
@@ -728,13 +709,10 @@ body {
       margin: 0px 9px; }
     .nav-wrap .nav-links a {
       font-size: 24px; }
-
   .main {
     flex-direction: row; }
-
   .rooms-bar::-webkit-scrollbar {
     width: 0 !important; }
-
   .rooms-bar {
     order: 1;
     flex-direction: column;
@@ -764,7 +742,6 @@ body {
           font-size: 16px;
           text-align: center;
           line-height: 90%; }
-
   .game {
     order: 2;
     flex-direction: column;
@@ -806,13 +783,13 @@ body {
       .game .board .cell {
         width: 120px;
         height: 180px; }
-
   .chat-box {
     flex-grow: 5;
     min-width: 80%; }
     .chat-box .chat {
       font-size: 16px;
       line-height: 120%; } }
+
 @media only screen and (min-width: 769px) {
   .nav-wrap {
     height: 9vh; }
@@ -823,18 +800,14 @@ body {
       font-size: 60px; }
     .nav-wrap .nav-links a {
       font-size: 20px; }
-
   .main {
     height: auto; }
-
   .rooms-bar::-webkit-scrollbar {
     width: 0 !important; }
-
   .rooms-bar {
     overflow-y: scroll;
     margin-left: 6px;
     margin-right: 6px; }
-
   .game {
     flex-direction: row;
     justify-content: center; }
@@ -847,9 +820,9 @@ body {
     .game .card:not(:first-child) {
       margin-left: 0px;
       margin-top: -74px; }
-
   .chat-box {
     display: none; } }
+
 @media only screen and (min-width: 806px) {
   .board {
     margin-right: 9px;
@@ -858,7 +831,6 @@ body {
     .board .cell {
       width: 120px !important;
       height: 180px !important; }
-
   .chat-box {
     min-width: 270px;
     display: flex;
@@ -869,5 +841,3 @@ body {
     height: 558px; }
     .chat-box .chat-input {
       height: 30px; } }
-
-/*# sourceMappingURL=index.css.map */

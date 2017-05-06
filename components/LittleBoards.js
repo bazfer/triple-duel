@@ -66,19 +66,19 @@ class LittleBoards extends React.Component {
     render() {
       return (
         <div className='littleboard container center-align'>
-					<table className='littlerboard-table'>
-						<tbody>
-							<tr>
-								<th className='littleboard-header'>Place</th>
-								<th className='littleboard-header'>User Name</th>
-								<th className='littleboard-header'>Wins</th>
-								<th className='littleboard-header'>Losses</th>
-								{/*<th>disconnects</th>*/}
-							</tr>
-							{this.renderRecords()}
-						</tbody>
-					</table>
-				</div>
+			<table className='littleboard-table'>
+				<tbody>
+					<tr className='littleboard-header'>
+						<th>Place</th>
+						<th>User Name</th>
+						<th>Wins</th>
+						<th>Losses</th>
+						{/*<th>disconnects</th>*/}
+					</tr>
+					{this.renderRecords()}
+				</tbody>
+			</table>
+		</div>
         );
     }
 };

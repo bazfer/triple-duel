@@ -471,58 +471,47 @@ body {
 }
 
 .littleboard {
-    margin-top: 12px;
-}
-
-.littleboard-table {
-    border: none;
-}
-
-.littleboard {
     order: 2;
-    background-color: $grey;
-    border: 3px solid $dark-brown;
-    border: $grey 1px solid;
-    border-radius: 6px;
-    margin: 30px 30px 0px 30px;
-    padding: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    border-bottom: none;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    margin: 22px;
     min-height: 85vh;
-    .littleboard-header {
-        color: $yellow;
-        font-family: Kefa-Regular;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        background: $dark-brown;
-        border: 2px solid $brown;
-        border-bottom: 3px solid $brown;
-        margin: -4px -4px 0px -4px !important;
-        padding: 12px;
-        font-family: Kefa-Regular;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        line-height: 90%;
-        font-size: 16px;
-        text-align: center;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    .littleboard-user {
-        margin: 0;
-        padding: 6px;
-        text-align: center;
-        border-bottom: $brown solid 1px;
-        margin: 0 -4px 0px -4px !important;
-        padding: 12px;
-        font-family: Kefa-Regular;
-        line-height: 90%;
-        font-size: 32px;
-        text-align: center;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
-        .middle {
-            text-align: center;
-        }
-    }
+        .littleboard-table {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            background-color: #918674;
+                .littleboard-header {
+                    color: #EBA828;
+                    font-family: Kefa-Regular;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                    font-size: 24px;
+                    border-bottom: 2px solid #592E0D;
+                        th {
+                            background: #371800;
+                            border-radius: 0;
+                            padding: 12px;
+                            text-align: center;
+                        }
+                        th:first-child {
+                            border-top-left-radius: 10px;
+                        }
+                        th:nth-child(0n+2) {
+                            text-align: left;
+                        }
+                        th:last-child {
+                            border-top-right-radius: 10px;
+                        }
+                }
+                .littleboard-user {
+                    border-top: #8c806e solid 1px;
+                    font-size: 24px;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+                    line-height: 90%;
+                        td {
+                            padding:  12px;
+                            text-align: center;
+                        }
+                        td:nth-child(0n+2) {
+                            text-align: left;
+                        }
+                }
+        }      
 }

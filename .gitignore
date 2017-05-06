@@ -1,1 +1,14 @@
+components/children/
+components/game/
+components/utils/
+components/app.js
+components/Index.js
+components/Login.js
+components/Main.js
+components/Navbar.js
+components/Rooms.js
+config/
+models/
 node_modules/
+routes/
+server.js
