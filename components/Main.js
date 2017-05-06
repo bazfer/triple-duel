@@ -184,9 +184,10 @@ var Main = React.createClass({
                             <div className={_class} data-card={i}>
                                 <img className="card-image" src={_this.state.hand[i].image_url}/>
                                 <div className='powers'>{_this.state.hand[i].up}</div>
+                                <div className='powers'>{_this.state.hand[i].left}</div>
                                 <div className='powers'>{_this.state.hand[i].right}</div>
                                 <div className='powers'>{_this.state.hand[i].down}</div>
-                                <div className='powers'>{_this.state.hand[i].left}</div>
+                                
                                 {/*<div className="powers">
                                     {_this.state.hand[i].up}<br/>{_this.state.hand[i].left}
                                     + {_this.state.hand[i].right}<br/>{_this.state.hand[i].down}
@@ -228,9 +229,10 @@ var Main = React.createClass({
                                 <div className={_class} data-card={i}>
                                     <img className="card-image" src={_this.state.board_game[i].image_url}/>
                                     <div className='powers'>{_this.state.board_game[i].up}</div>
+                                    <div className='powers'>{_this.state.board_game[i].left}</div>
                                     <div className='powers'>{_this.state.board_game[i].right}</div>
                                     <div className='powers'>{_this.state.board_game[i].down}</div>
-                                    <div className='powers'>{_this.state.board_game[i].left}</div>
+                                    
                                     {/*<div className="powers">
                                         {_this.state.hand[i].up}{_this.state.hand[i].left}
                                         {_this.state.hand[i].right}{_this.state.hand[i].down}
